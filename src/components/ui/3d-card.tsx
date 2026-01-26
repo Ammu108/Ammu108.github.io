@@ -1,14 +1,7 @@
 "use client";
 
 import type React from "react";
-import {
-  createContext,
-  useCallback,
-  useContext,
-  useEffect,
-  useRef,
-  useState,
-} from "react";
+import { createContext, useCallback, useContext, useEffect, useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const MouseEnterContext = createContext<
@@ -29,8 +22,7 @@ export const CardContainer = ({
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (!containerRef.current) return;
-    const { left, top, width, height } =
-      containerRef.current.getBoundingClientRect();
+    const { left, top, width, height } = containerRef.current.getBoundingClientRect();
     const x = (e.clientX - left - width / 2) / 25;
     const y = (e.clientY - top - height / 2) / 25;
     containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
@@ -83,9 +75,7 @@ export const CardBody = ({
   className?: string;
 }) => {
   return (
-    <div className={cn("h-96 w-96 transform-3d  *:transform-3d", className)}>
-      {children}
-    </div>
+    <div className={cn("h-96 w-96 transform-3d  *:transform-3d", className)}>{children}</div>
   );
 };
 
@@ -122,15 +112,7 @@ export const CardItem = ({
     } else {
       ref.current.style.transform = `translateX(0px) translateY(0px) translateZ(0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg)`;
     }
-  }, [
-    isMouseEntered,
-    translateX,
-    translateY,
-    translateZ,
-    rotateX,
-    rotateY,
-    rotateZ,
-  ]);
+  }, [isMouseEntered, translateX, translateY, translateZ, rotateX, rotateY, rotateZ]);
 
   // 2. Include handleAnimations in the dependency array
   useEffect(() => {

@@ -97,7 +97,7 @@ export default function Navbar() {
                 style={{ backgroundColor: "#00CECE" }}
                 asChild
               >
-                <a href="mailto:kumaramenx108@gmail.com">
+                <a href="#contact">
                   <IconMail size={18} />
                   Get in Touch
                 </a>

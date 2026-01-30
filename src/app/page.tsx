@@ -2,6 +2,7 @@ import AcademicBranch from "../components/home/academic";
 import LetsBuildFuture from "../components/home/contact";
 import CopyrightFooter from "../components/home/footer";
 import HeroSection from "../components/home/hero-section";
+import LiveExperience from "../components/home/live-working";
 import Navbar from "../components/home/navbar";
 import FeaturedProjects from "../components/home/projects";
 import CoreProficiencies from "../components/home/skills";
@@ -14,6 +15,7 @@ export default function Home() {
         <HeroSection />
         <AcademicBranch />
         <CoreProficiencies />
+        <LiveExperience />
         <FeaturedProjects />
         <div className="bg-slate-900/80">
           <LetsBuildFuture />

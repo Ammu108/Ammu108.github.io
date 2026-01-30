@@ -24,7 +24,7 @@ export default function FeaturedProjects() {
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-8 mb-8 sm:mb-12">
             <div>
               <p className="text-cyan-400 text-xs sm:text-sm font-mono tracking-widest uppercase mb-3 sm:mb-4">
-                Portfolio_showcase.ts
+                Portfolio showcase
               </p>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
                 Featured Projects

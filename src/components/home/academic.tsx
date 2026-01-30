@@ -63,8 +63,9 @@ export default function AcademicBranch() {
 
               {/* Description */}
               <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4 sm:mb-5 md:mb-6">
-                Specialized in Distributed Systems and Cloud Infrastructure. Graduated with
-                honors, focusing on high-performance computing and neural network foundations.
+                Specialized in Distributed Systems and Cloud Infrastructure.
+                Graduated with honors, focusing on high-performance computing
+                and neural network foundations.
               </p>
 
               {/* Tags */}

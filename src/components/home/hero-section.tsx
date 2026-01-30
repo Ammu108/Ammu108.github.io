@@ -21,11 +21,21 @@ export default function HeroSection() {
             <div className="flex flex-col justify-center space-y-6 sm:space-y-4 items-center lg:items-start">
               {/* Badge */}
               <div className="inline-flex w-fit flex-col gap-3">
-                <span className="px-3 sm:px-4 py-2 bg-cyan-500/20 border border-cyan-500/50 rounded-full text-cyan-400 text-[10px] md:text-xs font-semibold tracking-wider">
-                  ● AVAILABLE FOR NEW PROJECTS
-                </span>
+                <div className="flex flex-col sm:flex-row gap-2 sm:gap-3">
+                  <span className="px-3 sm:px-4 py-2 bg-cyan-500/20 border border-cyan-500/50 rounded-full text-cyan-400 text-[10px] md:text-xs font-semibold tracking-wider">
+                    ● AVAILABLE FOR NEW PROJECTS
+                  </span>
+                  <span className="inline-flex items-center gap-1.5 px-3 sm:px-4 py-2 bg-green-500/20 border border-green-500/50 rounded-full text-green-400 text-[10px] md:text-xs font-semibold tracking-wider">
+                    <span className="relative flex h-2 w-2">
+                      <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                      <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
+                    </span>
+                    WORKING AT EARNEX
+                  </span>
+                </div>
                 <div className="text-xs sm:text-sm text-purple-400 text-center lg:text-start">
-                  <span className="text-purple-500">&gt;&gt;</span> 8+ months of experience
+                  <span className="text-purple-500">&gt;&gt;</span> 8+ months of
+                  experience
                 </div>
               </div>
 
@@ -35,15 +45,19 @@ export default function HeroSection() {
                   Hello World,
                 </h1>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
-                  I&apos;m <span className="text-cyan-400 underline">{"<>AMENX</>"}</span>
+                  I&apos;m{" "}
+                  <span className="text-cyan-400 underline">
+                    {"<>AMENX</>"}
+                  </span>
                 </h1>
               </div>
 
               {/* Description */}
               <div>
                 <p className="text-sm sm:text-base md:text-lg text-gray-200 max-w-md leading-relaxed text-center lg:text-start">
-                  I&apos;m a developer who loves turning ideas into fast, scalable, and
-                  user-focused digital products using clean code and real-world best practices.
+                  I&apos;m a developer who loves turning ideas into fast,
+                  scalable, and user-focused digital products using clean code
+                  and real-world best practices.
                 </p>
               </div>
 
@@ -101,7 +115,9 @@ export default function HeroSection() {
                     <div className="pl-4">
                       <span className="text-cyan-400">role</span>
                       <span className="text-gray-400">: </span>
-                      <span className="text-green-400">&apos;Web Developer&apos;</span>
+                      <span className="text-green-400">
+                        &apos;Frontend Developer&apos;
+                      </span>
                       <span className="text-gray-400">,</span>
                     </div>
 
@@ -125,11 +141,15 @@ export default function HeroSection() {
                     <div className="pl-4">
                       <span className="text-cyan-400">stack</span>
                       <span className="text-gray-400">: [</span>
-                      <span className="text-green-400">&apos;Next.Js&apos;</span>
+                      <span className="text-green-400">
+                        &apos;Next.Js&apos;
+                      </span>
                       <span className="text-gray-400">, </span>
                       <span className="text-green-400">&apos;React&apos;</span>
                       <span className="text-gray-400">, </span>
-                      <span className="text-green-400">&apos;Typescript&apos;</span>
+                      <span className="text-green-400">
+                        &apos;Typescript&apos;
+                      </span>
                       <span className="text-gray-400">],</span>
                     </div>
 

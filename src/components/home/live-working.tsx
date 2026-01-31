@@ -49,7 +49,7 @@ export default function LiveExperience() {
                   {/* Company Badge and Name */}
                   <div className="flex items-center gap-4 sm:gap-6">
                     {/* Icon */}
-                    <div className="relative shrink-0 aspect-square w-24 flex items-center justify-center">
+                    <div className="relative shrink-0 aspect-square w-18 md:w-24 flex items-center justify-center">
                       <Image
                         src="/earnex-icon.png"
                         alt="company-icon"
@@ -60,7 +60,7 @@ export default function LiveExperience() {
 
                     {/* Company Details */}
                     <div className="flex-1 min-w-0">
-                      <h3 className="text-2xl sm:text-3xl md:text-3xl font-bold text-white mb-1 sm:mb-1 wrap-break-word">
+                      <h3 className="text-xl sm:text-3xl md:text-3xl font-bold text-white sm:mb-1 wrap-break-word">
                         Earnex Rewards
                       </h3>
                       <p className="text-cyan-400 text-sm sm:text-base md:text-lg font-mono">

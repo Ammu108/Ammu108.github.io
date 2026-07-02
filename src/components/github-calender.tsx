@@ -85,8 +85,7 @@ const GithubCalender = ({ data }: { data: ContributionCalendar }) => {
             </h3>
             <div className="flex flex-row items-center gap-2">
               <p className="text-sm text-white/80">
-                {totalContributions.toLocaleString()} contributions in the last
-                year
+                {totalContributions.toLocaleString()} contributions in the last year
               </p>
               <Link
                 href="https://github.com/Ammu108"

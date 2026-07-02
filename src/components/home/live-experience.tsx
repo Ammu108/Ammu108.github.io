@@ -5,28 +5,19 @@ import Link from "next/link";
 
 export default function LiveExperience() {
   return (
-    <div
-      id="experience"
-      className="relative isolate overflow-hidden text-white"
-    >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-20"
-      />
+    <div id="experience" className="relative isolate overflow-hidden text-white">
+      <div aria-hidden="true" className="pointer-events-none absolute inset-0 -z-20" />
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 -z-10 opacity-55"
       />
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
-        <div className="mb-8 sm:mb-12 md:mb-16">
-          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4 sm:gap-6 mb-8 sm:mb-12">
+        <div className="mb-8">
+          <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
             <div>
-              <p className="text-cyan-400 text-xs sm:text-sm font-mono tracking-widest uppercase mb-3 sm:mb-4">
-                CURRENT PROFESSIONAL STATUS
-              </p>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                Live Experience
+                Experience
               </h2>
             </div>
           </div>
@@ -87,29 +78,12 @@ export default function LiveExperience() {
 
                   {/* Instance Details */}
                   <div className="bg-white/3 rounded-xl border border-white/10 p-4 sm:p-6 space-y-4">
-                    <div className="flex items-center justify-between mb-3 sm:mb-4">
-                      <h4 className="text-xs sm:text-sm text-white/50 font-mono tracking-wider uppercase">
-                        INSTANCE DETAILS
-                      </h4>
-                      <div className="flex items-center gap-2 bg-[#00E5FF]/10 px-2 sm:px-3 py-1 rounded-md border border-[#00E5FF]/30">
-                        <span className="relative flex h-2 w-2">
-                          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#00E5FF] opacity-75"></span>
-                          <span className="relative inline-flex rounded-full h-2 w-2 bg-[#00E5FF]"></span>
-                        </span>
-                        <span className="text-[#00E5FF] text-[10px] sm:text-xs font-mono font-semibold">
-                          LIVE
-                        </span>
-                      </div>
-                    </div>
-
                     <div className="space-y-3 sm:space-y-4">
                       {/* Duration */}
                       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
-                        <span className="text-white/50 text-xs sm:text-sm">
-                          Duration
-                        </span>
+                        <span className="text-white/50 text-xs sm:text-sm">Duration</span>
                         <span className="text-white/80 text-sm sm:text-base font-mono">
-                          June 2025 — Present
+                          June 2025 — June 2026
                         </span>
                       </div>
 
@@ -118,9 +92,7 @@ export default function LiveExperience() {
 
                       {/* Environment */}
                       <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-4">
-                        <span className="text-white/50 text-xs sm:text-sm">
-                          Environment
-                        </span>
+                        <span className="text-white/50 text-xs sm:text-sm">Environment</span>
                         <span className="text-white/80 text-sm sm:text-base font-mono">
                           Startup SaaS
                         </span>
@@ -171,8 +143,9 @@ export default function LiveExperience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                          Architecting and developing the core frontend platform
-                          powering Earnex Rewards ecosystem.
+                          Built and maintained a customer rewards and loyalty platform across
+                          web (Next.js) and mobile (React Native), contributing to a unified
+                          product experience within a shared monorepo codebase.
                         </p>
                       </div>
                     </div>
@@ -184,8 +157,9 @@ export default function LiveExperience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                          Built scalable UI architecture using Next.js App
-                          Router with performance-first rendering strategies
+                          Developed reusable, typed UI component library in React + TypeScript,
+                          reducing redundant UI work across 3 product surfaces and improving
+                          visual consistency.
                         </p>
                       </div>
                     </div>
@@ -197,8 +171,9 @@ export default function LiveExperience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                          Collaborating directly with product and backend teams
-                          in a fast-iteration startup environment.
+                          Implemented efficient data-fetching and caching patterns using React
+                          Query (TanStack), cutting unnecessary API calls and improving
+                          perceived load performance.
                         </p>
                       </div>
                     </div>
@@ -210,10 +185,9 @@ export default function LiveExperience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                          Reduced page load time by{" "}
-                          <span className="text-[#00E5FF] font-bold">~45%</span>{" "}
-                          through code splitting, optimized assets, and caching
-                          strategies.
+                          Worked within a monorepo structure, sharing business logic,
+                          validators, and component utilities across web and mobile apps —
+                          reducing duplication and improving maintainability.
                         </p>
                       </div>
                     </div>
@@ -225,8 +199,8 @@ export default function LiveExperience() {
                       </div>
                       <div className="flex-1 min-w-0">
                         <p className="text-white/75 text-sm sm:text-base leading-relaxed">
-                          Shipping production features end-to-end from design to
-                          deployment.
+                          Optimized application performance, resolved bugs, and improved code
+                          quality through refactoring and best practices.
                         </p>
                       </div>
                     </div>

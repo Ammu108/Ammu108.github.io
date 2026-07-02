@@ -7,30 +7,21 @@ export default function FeaturedProjects() {
   const projects = [
     {
       id: 1,
-      title: "Earnex Rewards",
+      title: "Atom Notes",
       description:
-        "Earnex Rewards connects brands with real users through performance-driven, reward-based engagement—boosting trust.",
+        "AtomsNote is a student-built platform delivering semester-wise, subject-wise college notes and previous year questions — so you spend less time searching and more time learning.",
       tags: ["REACT", "NEXTJS", "TAILWIND CSS"],
-      image: "/earnex-screen.webp",
-      projectUrl: "https://www.earnexrewards.com/",
+      image: "/atom-notes.webp",
+      projectUrl: "https://atom-notes-web.vercel.app/",
     },
     {
       id: 2,
-      title: "Portfolio Website - 1",
+      title: "Portfolio Website",
       description:
         "A personal portfolio website built with Next.js, showcasing projects, skills, and experience with a modern design.",
       tags: ["REACT", "NEXTJS", "TAILWIND CSS"],
       image: "/portfolio-img-1.png",
       projectUrl: "https://ayush-portfolio-two-beta.vercel.app/",
-    },
-    {
-      id: 3,
-      title: "Portfolio Website - 2",
-      description:
-        "A personal portfolio website built with Next.js, showcasing projects, skills, and experience with a modern design.",
-      tags: ["REACT", "NEXTJS", "TAILWIND CSS"],
-      image: "/portfolio-img-2.png",
-      projectUrl: "https://rishabh-portfolio-tau.vercel.app/",
     },
   ];
 
@@ -38,27 +29,16 @@ export default function FeaturedProjects() {
     <div id="projects" className="text-white">
       <div className="max-w-7xl mx-auto px-4">
         {/* Header Section */}
-        <div className="mb-8 sm:mb-12 md:mb-16 ">
+        <div className="mb-8">
           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-8 mb-8 sm:mb-12">
-            <div>
-              <p className="text-cyan-400 text-xs sm:text-sm font-mono tracking-widest uppercase mb-3 sm:mb-4">
-                Portfolio showcase
-              </p>
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
-                Featured Projects
-              </h2>
-            </div>
-            <div className="text-right">
-              <p className="text-cyan-400 text-xs sm:text-sm font-mono flex items-center justify-start sm:justify-end gap-2">
-                <span className="w-2 h-2 bg-cyan-400 rounded-full inline-block"></span>
-                {projects.length} projects deployed
-              </p>
-            </div>
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight">
+              Featured Projects
+            </h2>
           </div>
         </div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-3 sm:gap-8 md:gap-10 flex-col gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 sm:gap-8 md:gap-10 flex-col gap-10">
           {projects.map((project) => (
             <CardContainer key={project.id} className="inter-var w-full">
               <CardBody className="bg-slate-800/40 relative group/card hover:shadow-2xl hover:shadow-cyan-500/10 backdrop-blur-sm border-slate-700/50 border w-full h-auto rounded-xl p-6 sm:p-8 transition-all duration-300 hover:bg-slate-800/60 hover:border-slate-600/50">

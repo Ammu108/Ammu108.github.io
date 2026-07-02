@@ -106,7 +106,7 @@ const HeroSection = () => {
             <Button
               variant="outline"
               size="xl"
-              onClick={() => download("/amenx-resume.pdf", "resume.pdf")}
+              onClick={() => download("/amenx-resume.pdf", "aman-kumar-resume.pdf")}
               className="px-7 py-3.5 rounded-xl text-sm font-medium text-white/70 border border-white/10 hover:border-white/30 hover:text-white transition-all duration-300"
             >
               Download CV
